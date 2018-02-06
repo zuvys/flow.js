@@ -151,19 +151,19 @@
     }
 
     Flow.for = function() {
-        return Flow.prototype.for.apply(Flow.run(), arguments)
+        return Flow.prototype.for.apply(Flow.apply(this), arguments)
     }
 
     Flow.forAsync = function() {
-        return Flow.prototype.forAsync.apply(Flow.run(), arguments)
+        return Flow.prototype.forAsync.apply(Flow.apply(this), arguments)
     }
 
     Flow.async = function() {
-        return Flow.prototype.async.apply(Flow.run(), arguments)
+        return Flow.prototype.async.apply(Flow.apply(this), arguments)
     }
 
     Flow.then = function() {
-        return Flow.prototype.then.apply(Flow.run(), arguments)
+        return Flow.prototype.then.apply(Flow.apply(this), arguments)
     }
 
     Flow.Version = '0.0.1'
