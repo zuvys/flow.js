@@ -95,7 +95,6 @@
         return this
     }
 
-    //ͬ��ѭ��,��һ��Ԫ�ؽ��յ�������һ�����񴫵ݵ�ֵ �ڶ���Ԫ�ؽ��յ����ǵ�һ��Ԫ�ش��ݵ�ֵ
     Flow.prototype.for = function(array, fn) {
         var item = createFlowItem.apply(null, [
             function(arg1, arg2, arg3) {
@@ -108,7 +107,6 @@
         return this
     }
 
-    //����ѭ��,ѭ�������д����м�ֵ��һ�������ֵ ѭ����ɺ�,��������һ�����񴫵�����ֵ����һ��������
     Flow.prototype.forAsync = function(array, fn) {
         var item = createFlowItem.apply(null, [
             function(arg1, arg2, arg3) {
