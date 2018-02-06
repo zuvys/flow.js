@@ -3,7 +3,7 @@
 function error(e){
     console.log('错误日志:'+e)
 }
-
+ 
 function say123(cont,err){
     window.e=err
     try{
